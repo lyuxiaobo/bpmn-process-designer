@@ -1,7 +1,11 @@
 <template>
   <div class="my-process-palette">
-    <p>简易palette</p>
     <el-collapse>
+      <el-collapse-item title="开始" name="3">
+        <div class="custom-button" @click="createElement($event, 'StartEvent')" @mousedown="createElement($event, 'StartEvent')">
+          开始
+        </div>
+      </el-collapse-item>
       <el-collapse-item title="任务" name="1">
         <!--  可以简化。。。 -->
         <div class="custom-button" @click="createElement($event, 'Task')" @mousedown="createElement($event, 'Task')">
@@ -28,11 +32,7 @@
           网关
         </div>
       </el-collapse-item>
-      <el-collapse-item title="开始" name="3">
-        <div class="custom-button" @click="createElement($event, 'StartEvent')" @mousedown="createElement($event, 'StartEvent')">
-          开始
-        </div>
-      </el-collapse-item>
+
       <el-collapse-item title="结束" name="4">
         <div class="custom-button" @click="createElement($event, 'EndEvent')" @mousedown="createElement($event, 'EndEvent')">
           结束

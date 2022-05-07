@@ -104,8 +104,10 @@
   }
 }
 
+
 //侧边栏配置
 .djs-palette.open {
+  visibility: hidden;
   .djs-palette-entries {
     div[class^="bpmn-icon-"]:before,
     div[class*="bpmn-icon-"]:before {
